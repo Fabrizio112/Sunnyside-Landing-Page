@@ -72,6 +72,9 @@ header nav ul #contact-button:hover {
   color: white;
   transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+header nav #barra-menu {
+  display: none;
+}
 
 #transform-section {
   width: 100%;
@@ -380,6 +383,9 @@ footer #social-container {
 @media (max-width: 480px) {
   header nav ul {
     display: none;
+  }
+  header nav #barra-menu {
+    display: inline-block;
   }
   #transform-section {
     display: flex;
