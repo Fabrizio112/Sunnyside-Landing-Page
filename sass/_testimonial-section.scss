@@ -1,0 +1,42 @@
+#testimonial-section {
+    @include tamaño(100%, 100vh);
+    @include flex(column, center, center);
+
+    h4 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        word-spacing: 0.6rem;
+    }
+
+    #testimonial-container {
+        @include flex(row, space-evenlys, center);
+        @include tamaño(80%, 60%);
+        gap: 30px;
+
+        div {
+            @include tamaño(100%/3, 100%);
+            @include flex(column, center, center);
+
+            gap: 0.6rem;
+
+            img {
+                width: 40%;
+                border-radius: 50%;
+            }
+
+            p {
+                margin: 4rem 0;
+                text-align: center;
+                font-size: $tamanio-parrafo;
+                line-height: $separacion-parrafo;
+            }
+
+            h5 {
+                font-size: $tamanio-parrafo;
+            }
+        }
+    }
+
+}

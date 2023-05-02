@@ -1,0 +1,36 @@
+#transform-section {
+    @include tamaño(100%, 80vh);
+
+    @include flex(row, center, center);
+
+    #transform-text {
+        @include tamaño(50%, 100%);
+        @include flex(row, center, center);
+
+        div {
+            @include tamaño(64%, 100%);
+            @include flex(column, center, start);
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: $tamanio-parrafo;
+                margin: 2.5rem 0;
+                font-weight: 100;
+                line-height: $separacion-parrafo;
+            }
+
+            span {
+                text-transform: uppercase;
+                font-weight: bolder;
+            }
+        }
+    }
+
+    #transform-image {
+        @include tamaño(50%, 100%);
+        @include imagenComoBackground("../imagenes/image-transform.jpg", cover);
+    }
+}

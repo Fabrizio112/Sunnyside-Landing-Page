@@ -1,0 +1,36 @@
+footer {
+    @include tamaño(100%, 40vh);
+    background-color: aquamarine;
+    @include flex(column, space-evenly, center);
+
+    icono {
+        color: aquamarine;
+    }
+
+    ul {
+        list-style: none;
+        @include flex(row, space-evenly, center);
+        width: 30%;
+
+
+        a {
+            text-decoration: none;
+            color: #2c7566;
+            font-weight: 900;
+        }
+
+        a:hover {
+            color: white;
+            transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+    }
+
+    svg:hover path {
+        fill: white;
+    }
+
+    #social-container {
+        width: 20%;
+        @include flex(row, space-evenly, center);
+    }
+}

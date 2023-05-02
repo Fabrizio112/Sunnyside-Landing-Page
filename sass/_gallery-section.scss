@@ -1,0 +1,22 @@
+#gallery-section {
+    @include tamaño(100%, 70vh);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+
+    #img-1 {
+        @include imagenComoBackground("../imagenes/image-gallery-milkbottles.jpg", cover)
+    }
+
+    #img-2 {
+        @include imagenComoBackground("../imagenes/image-gallery-orange.jpg", cover)
+    }
+
+    #img-3 {
+        @include imagenComoBackground("../imagenes/image-gallery-cone.jpg", cover)
+    }
+
+    #img-4 {
+        @include imagenComoBackground("../imagenes/image-gallery-sugarcubes.jpg", cover)
+    }
+}

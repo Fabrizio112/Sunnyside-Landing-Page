@@ -1,0 +1,53 @@
+#services-section {
+    @include tamaño(100%, 80vh);
+    @include flex(row, center, center);
+
+    #services-graphic_design {
+        @include tamaño(50%, 100%);
+        @include imagenComoBackground("../imagenes/image-graphic-design.jpg", cover);
+        @include flex(row, center, center);
+
+        div {
+            @include tamaño(60%, 100%);
+            @include flex(column, center, center);
+            margin-top: 16rem;
+            text-align: center;
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: $tamanio-parrafo;
+                margin-top: 2rem;
+                text-align: center;
+                line-height: $separacion-parrafo;
+            }
+        }
+    }
+
+    #services-photography {
+        @include tamaño(50%, 100%);
+        @include imagenComoBackground("../imagenes/image-photography.jpg", cover);
+
+        @include flex(row, center, center);
+
+        div {
+            @include tamaño(60%, 100%);
+            @include flex(column, center, center);
+            margin-top: 16rem;
+            text-align: center;
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: $tamanio-parrafo;
+                margin-top: 2rem;
+                text-align: center;
+                line-height: $separacion-parrafo;
+            }
+        }
+    }
+}

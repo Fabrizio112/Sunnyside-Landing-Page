@@ -1,0 +1,66 @@
+@media (max-width:768px) {
+    header {
+        nav {
+            ul {
+                width: 60%;
+                gap: 8px;
+            }
+        }
+    }
+
+    #transform-section {
+        #transform-text {
+            div {
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: $tamanio-parrafo-tablets;
+                }
+            }
+        }
+    }
+
+    #stand-section {
+        #stand-text {
+            div {
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: $tamanio-parrafo-tablets;
+                }
+            }
+        }
+    }
+
+    #services-section {
+        #services-graphic_design {
+            div {
+                p {
+                    font-size: $tamanio-parrafo-tablets;
+                }
+            }
+        }
+
+        #services-photography {
+            div {
+                p {
+                    font-size: $tamanio-parrafo-tablets;
+                }
+            }
+        }
+    }
+
+    footer {
+        ul {
+            width: 50%;
+        }
+
+        #social-container {
+            width: 40%;
+        }
+    }
+}
