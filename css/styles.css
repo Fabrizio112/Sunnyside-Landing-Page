@@ -1,0 +1,481 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 80vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 110vh;
+  background-image: url("../imagenes/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+  margin-top: 4rem;
+  letter-spacing: 0.5rem;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 14vh;
+  padding: 0 25px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 40%;
+}
+header nav ul a {
+  text-decoration: none;
+}
+header nav ul li {
+  color: white;
+  font-size: 1.2rem;
+}
+header nav ul #contact-button {
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+header nav ul #contact-button:hover {
+  background-color: #6eceff;
+  color: white;
+  transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#transform-section {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#transform-section #transform-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#transform-section #transform-text div {
+  width: 64%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+#transform-section #transform-text div h2 {
+  font-size: 3rem;
+}
+#transform-section #transform-text div p {
+  font-size: 1.2rem;
+  margin: 2.5rem 0;
+  font-weight: 100;
+  line-height: 1.8rem;
+}
+#transform-section #transform-text div span {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+#transform-section #transform-image {
+  width: 50%;
+  height: 100%;
+  background-image: url("../imagenes/image-transform.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#stand-section {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+#stand-section #stand-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#stand-section #stand-text div {
+  width: 64%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+#stand-section #stand-text div h2 {
+  font-size: 3rem;
+}
+#stand-section #stand-text div p {
+  font-size: 1.2rem;
+  margin: 2.5rem 0;
+  font-weight: 100;
+  line-height: 1.8rem;
+}
+#stand-section #stand-text div span {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+#stand-section #stand-image {
+  width: 50%;
+  height: 100%;
+  background-image: url("../imagenes/image-stand-out.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#services-section {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#services-section #services-graphic_design {
+  width: 50%;
+  height: 100%;
+  background-image: url("../imagenes/image-graphic-design.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#services-section #services-graphic_design div {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16rem;
+  text-align: center;
+}
+#services-section #services-graphic_design div h3 {
+  font-size: 2rem;
+}
+#services-section #services-graphic_design div p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 1.8rem;
+}
+#services-section #services-photography {
+  width: 50%;
+  height: 100%;
+  background-image: url("../imagenes/image-photography.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#services-section #services-photography div {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16rem;
+  text-align: center;
+}
+#services-section #services-photography div h3 {
+  font-size: 2rem;
+}
+#services-section #services-photography div p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+#testimonial-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#testimonial-section h4 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.6rem;
+}
+#testimonial-section #testimonial-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenlys;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  gap: 30px;
+}
+#testimonial-section #testimonial-container div {
+  width: 33.3333333333%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+#testimonial-section #testimonial-container div img {
+  width: 40%;
+  border-radius: 50%;
+}
+#testimonial-section #testimonial-container div p {
+  margin: 4rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+#testimonial-section #testimonial-container div h5 {
+  font-size: 1.2rem;
+}
+
+#gallery-section {
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+#gallery-section #img-1 {
+  background-image: url("../imagenes/image-gallery-milkbottles.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#gallery-section #img-2 {
+  background-image: url("../imagenes/image-gallery-orange.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#gallery-section #img-3 {
+  background-image: url("../imagenes/image-gallery-cone.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#gallery-section #img-4 {
+  background-image: url("../imagenes/image-gallery-sugarcubes.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer icono {
+  color: aquamarine;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+footer ul a {
+  text-decoration: none;
+  color: #2c7566;
+  font-weight: 900;
+}
+footer ul a:hover {
+  color: white;
+  transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+footer svg:hover path {
+  fill: white;
+}
+footer #social-container {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    width: 60%;
+    gap: 8px;
+  }
+  #transform-section #transform-text div h2 {
+    font-size: 2rem;
+  }
+  #transform-section #transform-text div p {
+    font-size: 1rem;
+  }
+  #stand-section #stand-text div h2 {
+    font-size: 2rem;
+  }
+  #stand-section #stand-text div p {
+    font-size: 1rem;
+  }
+  #services-section #services-graphic_design div p {
+    font-size: 1rem;
+  }
+  #services-section #services-photography div p {
+    font-size: 1rem;
+  }
+  footer ul {
+    width: 50%;
+  }
+  footer #social-container {
+    width: 40%;
+  }
+}
+@media (max-width: 480px) {
+  header nav ul {
+    display: none;
+  }
+  #transform-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  #transform-section #transform-text {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+  #transform-section #transform-text div {
+    align-items: center;
+  }
+  #transform-section #transform-image {
+    width: 100%;
+    height: 50%;
+  }
+  #stand-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+  }
+  #stand-section #stand-text {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+  #stand-section #stand-text div {
+    align-items: center;
+  }
+  #stand-section #stand-image {
+    width: 100%;
+    height: 50%;
+  }
+  #services-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 140vh;
+  }
+  #services-section #services-graphic_design {
+    width: 100%;
+    height: 50%;
+  }
+  #services-section #services-photography {
+    width: 100%;
+    height: 50%;
+  }
+  #testimonial-section {
+    width: 100%;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #testimonial-section h4 {
+    font-size: 1rem;
+    height: 10%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 0;
+  }
+  #testimonial-section #testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    gap: 0;
+  }
+  #testimonial-section #testimonial-container div {
+    width: 100%;
+    height: 33.3333333333%;
+  }
+  #testimonial-section #testimonial-container div p {
+    margin: 2rem 0;
+  }
+  #gallery-section {
+    width: 100%;
+    height: 60vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  footer ul {
+    width: 100%;
+  }
+  footer #social-container {
+    width: 50%;
+    justify-content: space-between;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
