@@ -1,7 +1,4 @@
-# Sunnyside-Landing-Page
- Mini-poject to practise SASS
-
- # <img style="padding-right:0.5rem" src='https://img.freepik.com/vector-premium/bandera-argentina-bandera-argentina-ilustracion-vectorial_685751-66.jpg' width="50px" >  <span style="font-size:3rem">ESPAÑOL:</span>
+# <img style="padding-right:0.5rem" src='https://img.freepik.com/vector-premium/bandera-argentina-bandera-argentina-ilustracion-vectorial_685751-66.jpg' width="50px" >  <span style="font-size:3rem">ESPAÑOL:</span>
 ## <i align="center" style="font-size:2rem">Pagina Principal de Sunnyside</i>
 
 Mini proyecto para practicar SASS a partir de un template de Frontend Mentor . Las imagenes y colores son provistos por la pagina web
